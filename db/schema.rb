@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160318154643) do
+ActiveRecord::Schema.define(version: 20160321140234) do
+
+  create_table "clients", force: :cascade do |t|
+    t.integer  "users_id"
+    t.string   "client"
+    t.string   "logoSmall_file_name"
+    t.string   "logoSmall_content_type"
+    t.integer  "logoSmall_file_size"
+    t.datetime "logoSmall_updated_at"
+    t.string   "logoLarge_file_name"
+    t.string   "logoLarge_content_type"
+    t.integer  "logoLarge_file_size"
+    t.datetime "logoLarge_updated_at"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name",                                null: false

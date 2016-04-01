@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 
 gem 'devise', '3.4.1'
 
+# file uploads
 
+gem 'paperclip', "~> 4.3"
 
 # ---------------------below added at creation-------------------------------------------------------------
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

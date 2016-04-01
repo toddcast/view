@@ -1,5 +1,3 @@
 class Client < ActiveRecord::Base
-
-	belongs_to :users
-
+	has_many :client_submissions
 end

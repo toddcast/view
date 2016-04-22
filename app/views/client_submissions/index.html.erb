@@ -1,0 +1,7 @@
+require 'csv'
+
+def index 
+	<%= form_for @client_submission %>
+		<%= form.input :csv, as: :file %>
+	<% end %>
+end

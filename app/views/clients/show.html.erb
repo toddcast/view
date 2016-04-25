@@ -1,4 +1,9 @@
 <p id="notice"><%= notice %></p>
+<% @client_submissions.each do |submission| %>
+	<%= submission.name %>
+	<%= link_to 'Show Submission', client_submission_path(submission) %>
 
+	
+<%end%>	
 <%= link_to 'Edit', edit_client_path(@client) %> |
 <%= link_to 'Back', clients_path %>

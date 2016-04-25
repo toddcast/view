@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160420182914) do
+ActiveRecord::Schema.define(version: 20160422200439) do
+
+  create_table "client_submission_data", force: :cascade do |t|
+    t.integer  "client_submission_id"
+    t.text     "json"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
 
   create_table "client_submissions", force: :cascade do |t|
     t.text     "json"

@@ -8,6 +8,11 @@ gem 'devise', '3.4.1'
 
 gem 'paperclip', "~> 4.3"
 
+
+#easier development with haml
+
+gem 'haml-rails', '>=0.3.4', :group => :development
+
 # ---------------------below added at creation-------------------------------------------------------------
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'

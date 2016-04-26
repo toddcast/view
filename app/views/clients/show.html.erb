@@ -1,4 +1,9 @@
 <p id="notice"><%= notice %></p>
+
+<div>
+<%= @client.logoLarge %>
+</div>
+
 <% @client_submissions.each do |submission| %>
 	<%= submission.name %>
 	<%= link_to 'Show Submission', client_submission_path(submission) %>

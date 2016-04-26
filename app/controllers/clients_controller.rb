@@ -1,8 +1,17 @@
 class ClientsController < ApplicationController
+<<<<<<< HEAD
   # before_action :set_client, only: [:show, :edit, :update, :destroy]
 
   # GET /clients
   # GET /clients.json
+=======
+	
+	before_action :set_client, only: [:show, :edit, :update, :destroy]
+	
+	
+	#GET /clients
+  	# GET /clients.json
+>>>>>>> add_bourbon
   def index
     @clients = Client.all
   end
@@ -71,6 +80,10 @@ class ClientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def client_params
+<<<<<<< HEAD
       params.require(:client).permit(:client, :logoSmall , :logoLarge )
+=======
+      params.require(:client).permit(:client, :logoLarge )
+>>>>>>> add_bourbon
     end
 end

@@ -1,0 +1,7 @@
+<p> New Client Submission </p>
+
+<%= form_for @submission, url: {action: "create"} do |submission| %>
+	<p>Name: <%= submission.text_field :name %></p>
+	<p>CSV File:<%= submission.file_field :csv_file %></p>
+	<%= submission.submit "Create" %>
+<% end %>

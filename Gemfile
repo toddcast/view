@@ -8,6 +8,9 @@ gem 'devise', '3.4.1'
 
 gem 'paperclip', "~> 4.3"
 
+#sass markup
+gem 'bourbon'
+gem 'neat'
 
 #easier development with haml
 
